@@ -1,0 +1,7 @@
+{
+  "name": "astro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

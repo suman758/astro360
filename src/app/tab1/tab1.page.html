@@ -1,0 +1,44 @@
+<ion-header
+  [translucent]="true"
+  joyrideStep="firstStep"
+  [text]="stepContent[0]"
+>
+  <ion-toolbar>
+    <ion-title> Tab 1 </ion-title>
+    <!-- Hamburger -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- <ng-template #prevButton>
+    <ion-button size="small">Back</ion-button>
+  </ng-template>
+  <ng-template #nextButton>
+    <ion-button size="small">
+      <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+    </ion-button>
+  </ng-template>
+  <ng-template #doneButton>
+    <ion-button size="small"> Done </ion-button>
+  </ng-template> -->
+  <h1 title="Page Title">Text</h1>
+  <div joyrideStep="secondStep" title="Page Title">
+    <span (done)="onDone()"
+      >It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English.
+    </span>
+  </div>
+  <!-- <ion-button (click)="onClick()">tutorial</ion-button> -->
+  <!-- <app-explore-container name="Tab 1 page"> </app-explore-container> -->
+</ion-content>

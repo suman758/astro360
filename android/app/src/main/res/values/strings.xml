@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">astro360</string>
-    <string name="title_activity_main">astro360</string>
-    <string name="package_name">com.wrctpl.astro360</string>
-    <string name="custom_url_scheme">com.wrctpl.astro360</string>
-  <string name="fb_app_id">217556656943197</string>
-  <string name="fb_app_name">Astro360</string>
-</resources>

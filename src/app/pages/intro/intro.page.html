@@ -1,31 +1,41 @@
 <ion-content>
   <ion-slides pager="true" [options]="slideOpts">
     <!-- Slide 1 -->
-    <ion-slide>
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col>
-            <div>
-              <img
-                style="width: 50%; height: 50%"
-                src="../../../assets/screens/signin.png"
-              />
+    <ion-slide id="slide1">
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col class="p-0">
+            <div class="logo ion-text-start">
+              <img src="assets/screens/intro-logo.png" alt="Astro360" class="img-fluid">
+            </div>
+          </ion-col>
+          <ion-col class="p-0">
+            <div class="skip ion-text-end">
+              <ion-button class="text-transform font-size-12 primary-text-color round" (click)="start()">
+                Skip <ion-icon name="arrow-forward-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center m-t-20">
+          <ion-col class="p-0">
+            <div class="icon">
+              <img src="assets/screens/first-slider.png" alt="Astro360" class="img-fluid">
             </div>
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col class="p-0">
+            <h2 class="font-size-26 primary-text-color1">FREE Kundli Matching</h2>
+            <p class="font-size-20 color-white lineheight-30">Get Your horoscopes<br> matched today!</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="p-0">
             <div>
-              <ion-button (click)="next()" fill="outline" color="light"
+              <ion-button class="next-btn primary-text-color1" (click)="next()" fill="outline"
                 >Next</ion-button
               >
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div>
-              <a class="anchor" (click)="start()">Skip Tutorial</a>
             </div>
           </ion-col>
         </ion-row>
@@ -33,31 +43,41 @@
     </ion-slide>
 
     <!-- Slide 2 -->
-    <ion-slide>
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col>
-            <div>
-              <img
-                style="width: 50%; height: 50%"
-                src="../../../assets/screens/dashboard.png"
-              />
+    <ion-slide id="slide2">
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col class="p-0">
+            <div class="logo ion-text-start">
+              <img src="assets/screens/intro-logo.png" alt="Astro360" class="img-fluid">
+            </div>
+          </ion-col>
+          <ion-col class="p-0">
+            <div class="skip ion-text-end">
+              <ion-button class="text-transform font-size-12 primary-text-color round" (click)="start()">
+                Skip <ion-icon name="arrow-forward-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center m-t-20">
+          <ion-col class="p-0">
+            <div class="icon">
+              <img src="assets/screens/first-slider.png" alt="Astro360" class="img-fluid">
             </div>
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col class="p-0">
+            <h2 class="font-size-26 primary-text-color1">FREE Kundli Matching</h2>
+            <p class="font-size-20 color-white lineheight-30">Get Your horoscopes<br> matched today!</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="p-0">
             <div>
-              <ion-button (click)="next()" fill="outline" color="light"
+              <ion-button class="next-btn primary-text-color1" (click)="next()" fill="outline"
                 >Next</ion-button
               >
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div>
-              <a class="anchor" (click)="start()">Skip Tutorial</a>
             </div>
           </ion-col>
         </ion-row>
@@ -65,31 +85,41 @@
     </ion-slide>
 
     <!-- Slide 3 -->
-    <ion-slide>
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col>
-            <div>
-              <img
-                style="width: 50%; height: 50%"
-                src="../../../assets/screens/daily-horoscope.png"
-              />
+    <ion-slide id="slide3">
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col class="p-0">
+            <div class="logo ion-text-start">
+              <img src="assets/screens/intro-logo.png" alt="Astro360" class="img-fluid">
+            </div>
+          </ion-col>
+          <ion-col class="p-0">
+            <div class="skip ion-text-end">
+              <ion-button class="text-transform font-size-12 primary-text-color round" (click)="start()">
+                Skip <ion-icon name="arrow-forward-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center m-t-20">
+          <ion-col class="p-0">
+            <div class="icon">
+              <img src="assets/screens/first-slider.png" alt="Astro360" class="img-fluid">
             </div>
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col class="p-0">
+            <h2 class="font-size-26 primary-text-color1">FREE Kundli Matching</h2>
+            <p class="font-size-20 color-white lineheight-30">Get Your horoscopes<br> matched today!</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="p-0">
             <div>
-              <ion-button (click)="next()" fill="outline" color="light"
+              <ion-button class="next-btn primary-text-color1" (click)="next()" fill="outline"
                 >Next</ion-button
               >
-            </div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div>
-              <a class="anchor" (click)="start()">Skip Tutorial</a>
             </div>
           </ion-col>
         </ion-row>
@@ -97,23 +127,40 @@
     </ion-slide>
 
     <!-- Slide 4 -->
-    <ion-slide>
-      <ion-grid>
-        <ion-row class="ion-justify-content-center">
-          <ion-col>
-            <div>
-              <img
-                style="width: 50%; height: 50%"
-                src="../../../assets/screens/talk-with-astrologer.png"
-              />
+    <ion-slide id="slide4">
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col class="p-0">
+            <div class="logo ion-text-start">
+              <img src="assets/screens/intro-logo.png" alt="Astro360" class="img-fluid">
+            </div>
+          </ion-col>
+          <ion-col class="p-0">
+            <div class="skip ion-text-end">
+              <ion-button class="text-transform font-size-12 primary-text-color round" (click)="start()">
+                Skip <ion-icon name="arrow-forward-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center m-t-20">
+          <ion-col class="p-0">
+            <div class="icon">
+              <img src="assets/screens/first-slider.png" alt="Astro360" class="img-fluid">
             </div>
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col class="p-0">
+            <h2 class="font-size-26 primary-text-color1">FREE Kundli Matching</h2>
+            <p class="font-size-20 color-white lineheight-30">Get Your horoscopes<br> matched today!</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="p-0">
             <div>
-              <ion-button (click)="start()" fill="outline" color="light"
-                >Start</ion-button
+              <ion-button class="next-btn primary-text-color1" (click)="next()" fill="outline"
+                >Next</ion-button
               >
             </div>
           </ion-col>

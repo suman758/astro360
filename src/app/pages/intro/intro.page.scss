@@ -1,12 +1,71 @@
 ion-content {
-  --background: #0081ca;
+  --background: #340b59;
 }
 .anchor {
   color: #ffffff;
 }
 
 ion-slides {
-  height: 100%;
-  --bullet-background-active: #fff;
-  --bullet-background: #000;
+  // height: 100%;
+  --bullet-background-active: #f8d843;
+  --bullet-background: #a9a19c;
 }
+
+ion-slides {
+  height: 100%;
+
+  ion-slide {
+    background-size: cover;
+    background-position: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 100% !important;
+  }
+
+  #slide1 {
+    background-image: url('../../../assets/screens/intro-page.jpg');
+    background-position: left;
+  }
+
+  #slide2 {
+    background-image: url('../../../assets/screens/intro-page.jpg');
+    background-position: left;
+  }
+
+  #slide3 {
+    background-image: url('../../../assets/screens/intro-page.jpg');
+    background-position: left;
+  }
+
+  #slide4 {
+    background-image: url('../../../assets/screens/intro-page.jpg');
+    background-position: left;
+  }
+
+  .round {
+  --width: 60px;
+  --height: 26px;
+  --border-radius: 30px;
+  --vertical-align: middle;
+  --padding-start: 14px;
+  --padding-end: 14px;
+  --background: #f8d843;
+  margin: 0;
+  }
+
+  ion-button.next-btn {
+    --border-width: 0;
+}
+}
+
+// .first-slider {
+//     background-repeat: no-repeat !important;
+//     height: 768px;
+//     background-position: center center !important;
+
+//   h2 {
+//     font-family: 'Segoe UI';
+//     font-weight: 500;
+//     color: #f8d843;
+//   }
+// }

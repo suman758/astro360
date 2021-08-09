@@ -2,11 +2,26 @@
   <ion-menu contentId="main-content" side="start">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Astro 360</ion-title>
+        <ion-title>
+          <img src="assets/screens/logo.png" alt="Astro360" class="img-fluid">
+        </ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
+      <div class="navbar-header">
+        <div class="d-flex ion-align-items-center">
+          <div class="icon-avatar m-r-10">
+            <img src="assets/screens/avatar-icon.png" alt="Astro360" class="img-fluid">
+          </div>
+          <div class="flex-grow-1">
+            <div class="right-content">
+              <h2 class="font-size-16 font-weight-semi">Welcome</h2>
+              <p class="font-size-16">Suman Das</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div *ngIf="user && user.picture">
         <img [src]="user && user.picture.data.url" />
         {{ user.name }}

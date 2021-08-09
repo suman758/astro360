@@ -1,8 +1,4 @@
-<ion-header
-  [translucent]="true"
-  joyrideStep="firstStep"
-  [text]="stepContent[0]"
->
+<ion-header [translucent]="true" joyrideStep="firstStep" [text]="stepContent[0]">
   <ion-toolbar>
     <ion-title> Tab 1 </ion-title>
     <!-- Hamburger -->
@@ -31,13 +27,26 @@
   </ng-template> -->
   <h1 title="Page Title">Text</h1>
   <div joyrideStep="secondStep" title="Page Title">
-    <span (done)="onDone()"
-      >It is a long established fact that a reader will be distracted by the
+    <span (done)="onDone()">It is a long established fact that a reader will be distracted by the
       readable content of a page when looking at its layout. The point of using
       Lorem Ipsum is that it has a more-or-less normal distribution of letters,
       as opposed to using 'Content here, content here', making it look like
       readable English.
     </span>
+  </div>
+  <div class="container">
+    <h1>Install Bootstrap 5 in Angular 12</h1>
+
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
   </div>
   <!-- <ion-button (click)="onClick()">tutorial</ion-button> -->
   <!-- <app-explore-container name="Tab 1 page"> </app-explore-container> -->

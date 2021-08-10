@@ -517,6 +517,22 @@
   cursor: pointer;
 }
 
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 .common-btn {
   width: 170px;
   --border-radius: 30px;

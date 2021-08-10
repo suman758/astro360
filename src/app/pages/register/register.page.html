@@ -1,13 +1,4 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content class="p-0">
-  <!-- <ion-list-header>
-    <ion-label class="top-label">Sign In</ion-label>
-  </ion-list-header> -->
   <div class="top-header position-relative">
     <div class="common-head-bg position-absolute">
       <img src="assets/screens/login-top-bg.png" alt="Astro360" width="176" height="242" class="">
@@ -20,37 +11,35 @@
     <ion-card class="common-shadow border-radius-0 common-border">
       <ion-card-content>
         <h2 class="font-size-24 font-weight-bold primary-text-color">Hello</h2>
-        <p class="font-size-16 font-weight-semi primary-text-color">Sign into your account</p>
-        <form class="m-t-15" (ngSubmit)="login()" [formGroup]="credentials">
+        <p class="font-size-16 font-weight-semi primary-text-color m-t-10">Create Account</p>
+        <form class="m-t-15">
           <div class="">
-            <div class="d-flex align-items-center">
+            <div class="ion-display-flex align-items-center">
               <ion-item>
                 <ion-label class="font-size-14 primary-text-color2" position="floating">Mobile / Email Id</ion-label>
                 <ion-input></ion-input>
               </ion-item>
               <ion-icon class="common-icon-ion" name="person-outline"></ion-icon>
             </div>
-            <div class="d-flex align-items-center">
+            <!-- <div class="ion-display-flex align-items-center">
               <ion-item>
                 <ion-label class="font-size-14 primary-text-color2" position="floating">OTP</ion-label>
                 <ion-input></ion-input>
               </ion-item>
               <ion-icon class="common-icon-ion" name="eye-outline"></ion-icon>
-            </div>
+            </div> -->
           </div>
-      
-          <ion-button class="common-btn m-t-20" type="submit" [disabled]="!credentials.valid"
-            >Log in</ion-button
-          >
-          <!-- <ion-button type="button" expand="block" color="primary" fill="clear"
-            >Not yet a member? Sign up!
-          </ion-button> -->
-          <div class="ion-text-center m-t-30 m-b-30">
-            <p class="m-0 font-size-14 primary-text-color">Or Login using social Media</p>
+          <div class="signup-text ion-display-flex justify-content-center my-15">
+            <ion-checkbox></ion-checkbox>
+            <p class="m-l-5">By signing up, you agree to our
+              <br>
+              <span class="primary-text-color3">Terms of use</span> &amp; <span class="primary-text-color3">Privacy Policy</span>
+            </p>
           </div>
-          <!-- <ion-item-divider class="text-center">
-            <ion-label></ion-label>
-          </ion-item-divider> -->
+          <ion-button class="common-btn m-t-20" type="submit">Sign Up</ion-button>
+          <div class="ion-text-center m-t-20 m-b-20">
+            <p class="m-0 font-size-14 primary-text-color">Or Sign Up using social Media</p>
+          </div>
           <ion-row class="m-t-20 m-b-20">
             <ion-col size="6">
               <div class="ion-text-end">
@@ -77,90 +66,7 @@
       </ion-card-content>
     </ion-card>
     <div class="register my-10">
-      <p class="font-size-14 m-0">Dont have an account? <span class="primary-text-color3">Register Now</span></p>
+      <p class="font-size-14 m-0">Do you have any account? <span class="primary-text-color3">Login Now</span></p>
     </div>
   </div>
-  <!-- <form (ngSubmit)="login()" [formGroup]="credentials">
-    <div class="input-group">
-      <ion-item>
-        <ion-label position="floating">Mobile / Email Id</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">OTP</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </div>
-    <div class="input-group">
-      <ion-item>
-        <ion-label>Email:</ion-label>
-        <ion-input
-          type="email"
-          placeholder="Email"
-          formControlName="email"
-        ></ion-input>
-      </ion-item>
-      <div
-        *ngIf="(email.dirty || email.touched) && email.errors"
-        class="errors"
-      >
-        <span *ngIf="email.errors?.required">Email is required</span>
-        <span *ngIf="email.errors?.email">Email is invalid</span>
-      </div>
-      <ion-item>
-        <ion-label>Password:</ion-label>
-        <ion-input
-          type="password"
-          placeholder="Password"
-          formControlName="password"
-        ></ion-input>
-      </ion-item>
-      <div
-        *ngIf="(password.dirty || password.touched) && password.errors"
-        class="errors"
-      >
-        <span *ngIf="password.errors?.required">Password is required</span>
-        <span *ngIf="password.errors?.minlength"
-          >Password needs to be 6 characters</span
-        >
-      </div>
-    </div>
-
-    <ion-button type="submit" expand="block" [disabled]="!credentials.valid"
-      >Log in</ion-button
-    >
-    <ion-button type="button" expand="block" color="primary" fill="clear"
-      >Not yet a member? Sign up!
-    </ion-button>
-    <ion-item-divider slots="start">
-      <ion-label> or use one of your social profiles </ion-label>
-    </ion-item-divider>
-    <ion-row>
-      <ion-col>
-        <ion-button
-          type="button"
-          expand="block"
-          color="tertiary"
-          (click)="googlelogin()"
-        >
-          <ion-icon name="logo-google" slot="start"></ion-icon>
-          Sign in with Google
-        </ion-button>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <ion-button
-          type="button"
-          expand="block"
-          color="secondary"
-          (click)="fblogin()"
-        >
-          <ion-icon name="logo-facebook" slot="start"></ion-icon>
-          Sign in with Facebook
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  </form> -->
 </ion-content>

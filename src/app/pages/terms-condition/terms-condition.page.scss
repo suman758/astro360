@@ -1,0 +1,27 @@
+.top-head {
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 0px 20px;
+}
+
+.middle-text {
+    padding: 40px 0px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #f4dd45;
+    justify-content: center;
+}
+
+.common-btn {
+    width: 140px;
+}
+
+.decline-btn {
+    width: 140px;
+    --background: #68c591;
+}

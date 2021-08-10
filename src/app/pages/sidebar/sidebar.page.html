@@ -10,25 +10,17 @@
 
     <ion-content>
       <div class="navbar-header">
-        <ion-grid>
-          <ion-col size="3">
-            <div class="icon-avatar bg-white border-radius-50 m-r-10">
-              <img src="assets/screens/avatar-icon.png" alt="Astro360" class="img-fluid">
-            </div>
-          </ion-col>
-          <ion-col size="9">
+        <div class="ion-display-flex align-items-center">
+          <div class="icon-avatar bg-white border-radius-50 m-r-10">
+            <img src="assets/screens/avatar-icon.png" alt="Astro360" class="img-fluid">
+          </div>
+          <div class="flex-block">
             <div class="right-content">
               <h2 class="font-size-16 font-weight-semi m-0">Welcome</h2>
               <p class="font-size-16 m-0">Suman Das</p>
             </div>
-          </ion-col>
-        </ion-grid>
-        <!-- <div class="d-flex align-items-center">
-          
-          <div class="flex-grow-1">
-            
           </div>
-        </div> -->
+        </div>
       </div>
       <div *ngIf="user && user.picture">
         <img [src]="user && user.picture.data.url" />

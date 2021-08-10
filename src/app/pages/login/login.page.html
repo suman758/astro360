@@ -20,23 +20,23 @@
     <ion-card class="common-shadow border-radius-0 common-border">
       <ion-card-content>
         <h2 class="font-size-24 font-weight-bold primary-text-color">Hello</h2>
-        <p class="font-size-16 font-weight-semi primary-text-color">Sign into your account</p>
-        <form class="m-t-15" (ngSubmit)="login()" [formGroup]="credentials">
+        <p class="font-size-16 font-weight-semi primary-text-color m-t-10">Sign into your account</p>
+        <form class="m-t-15">
           <div class="">
-            <div class="d-flex align-items-center">
+            <div class="ion-display-flex align-items-center">
               <ion-item>
                 <ion-label class="font-size-14 primary-text-color2" position="floating">Mobile / Email Id</ion-label>
                 <ion-input></ion-input>
               </ion-item>
               <ion-icon class="common-icon-ion" name="person-outline"></ion-icon>
             </div>
-            <div class="d-flex align-items-center">
+            <!-- <div class="ion-display-flex align-items-center">
               <ion-item>
                 <ion-label class="font-size-14 primary-text-color2" position="floating">OTP</ion-label>
                 <ion-input></ion-input>
               </ion-item>
               <ion-icon class="common-icon-ion" name="eye-outline"></ion-icon>
-            </div>
+            </div> -->
           </div>
       
           <ion-button class="common-btn m-t-20" type="submit" [disabled]="!credentials.valid"

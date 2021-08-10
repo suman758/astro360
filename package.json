@@ -32,7 +32,6 @@
     "@ionic-native/google-plus": "^5.34.0",
     "@ionic/angular": "^5.5.2",
     "@ionic/lab": "^3.2.10",
-    "bootstrap": "^5.1.0",
     "cordova-plugin-facebook4": "^6.4.0",
     "cordova-plugin-googleplus": "^8.5.2",
     "firebase": "^8.7.1",

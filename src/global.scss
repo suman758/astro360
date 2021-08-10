@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,100 +25,96 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-/* bootstrap 5.1.0 */
-@import "~bootstrap/dist/css/bootstrap.css";
-
 // // dark start
 @mixin ios-dark {
-    --ion-background-color: #000000;
-    --ion-background-color-rgb: 0, 0, 0;
+  --ion-background-color: #000000;
+  --ion-background-color-rgb: 0, 0, 0;
 
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255, 255, 255;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
 
-    --ion-color-step-50: #0d0d0d;
-    --ion-color-step-100: #1a1a1a;
-    --ion-color-step-150: #262626;
-    --ion-color-step-200: #333333;
-    --ion-color-step-250: #404040;
-    --ion-color-step-300: #4d4d4d;
-    --ion-color-step-350: #595959;
-    --ion-color-step-400: #666666;
-    --ion-color-step-450: #737373;
-    --ion-color-step-500: #808080;
-    --ion-color-step-550: #8c8c8c;
-    --ion-color-step-600: #999999;
-    --ion-color-step-650: #a6a6a6;
-    --ion-color-step-700: #b3b3b3;
-    --ion-color-step-750: #bfbfbf;
-    --ion-color-step-800: #cccccc;
-    --ion-color-step-850: #d9d9d9;
-    --ion-color-step-900: #e6e6e6;
-    --ion-color-step-950: #f2f2f2;
+  --ion-color-step-50: #0d0d0d;
+  --ion-color-step-100: #1a1a1a;
+  --ion-color-step-150: #262626;
+  --ion-color-step-200: #333333;
+  --ion-color-step-250: #404040;
+  --ion-color-step-300: #4d4d4d;
+  --ion-color-step-350: #595959;
+  --ion-color-step-400: #666666;
+  --ion-color-step-450: #737373;
+  --ion-color-step-500: #808080;
+  --ion-color-step-550: #8c8c8c;
+  --ion-color-step-600: #999999;
+  --ion-color-step-650: #a6a6a6;
+  --ion-color-step-700: #b3b3b3;
+  --ion-color-step-750: #bfbfbf;
+  --ion-color-step-800: #cccccc;
+  --ion-color-step-850: #d9d9d9;
+  --ion-color-step-900: #e6e6e6;
+  --ion-color-step-950: #f2f2f2;
 
-    --ion-toolbar-background: #0d0d0d;
+  --ion-toolbar-background: #0d0d0d;
 
-    --ion-item-background: #1c1c1c;
-    --ion-item-background-activated: #313131;
+  --ion-item-background: #1c1c1c;
+  --ion-item-background-activated: #313131;
 
-    ion-title.title-large {
-        --color: white;
-    }
+  ion-title.title-large {
+    --color: white;
+  }
 }
 
 @mixin md-dark {
-    --ion-background-color: #121212;
-    --ion-background-color-rgb: 18, 18, 18;
+  --ion-background-color: #121212;
+  --ion-background-color-rgb: 18, 18, 18;
 
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255, 255, 255;
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255, 255, 255;
 
-    --ion-border-color: #222222;
+  --ion-border-color: #222222;
 
-    --ion-color-step-50: #1e1e1e;
-    --ion-color-step-100: #2a2a2a;
-    --ion-color-step-150: #363636;
-    --ion-color-step-200: #414141;
-    --ion-color-step-250: #4d4d4d;
-    --ion-color-step-300: #595959;
-    --ion-color-step-350: #656565;
-    --ion-color-step-400: #717171;
-    --ion-color-step-450: #7d7d7d;
-    --ion-color-step-500: #898989;
-    --ion-color-step-550: #949494;
-    --ion-color-step-600: #a0a0a0;
-    --ion-color-step-650: #acacac;
-    --ion-color-step-700: #b8b8b8;
-    --ion-color-step-750: #c4c4c4;
-    --ion-color-step-800: #d0d0d0;
-    --ion-color-step-850: #dbdbdb;
-    --ion-color-step-900: #e7e7e7;
-    --ion-color-step-950: #f3f3f3;
+  --ion-color-step-50: #1e1e1e;
+  --ion-color-step-100: #2a2a2a;
+  --ion-color-step-150: #363636;
+  --ion-color-step-200: #414141;
+  --ion-color-step-250: #4d4d4d;
+  --ion-color-step-300: #595959;
+  --ion-color-step-350: #656565;
+  --ion-color-step-400: #717171;
+  --ion-color-step-450: #7d7d7d;
+  --ion-color-step-500: #898989;
+  --ion-color-step-550: #949494;
+  --ion-color-step-600: #a0a0a0;
+  --ion-color-step-650: #acacac;
+  --ion-color-step-700: #b8b8b8;
+  --ion-color-step-750: #c4c4c4;
+  --ion-color-step-800: #d0d0d0;
+  --ion-color-step-850: #dbdbdb;
+  --ion-color-step-900: #e7e7e7;
+  --ion-color-step-950: #f3f3f3;
 
-    --ion-item-background: #1A1B1E;
+  --ion-item-background: #1a1b1e;
 
-    ion-title.title-large {
-        --color: white;
-    }
+  ion-title.title-large {
+    --color: white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
+  .ios body.dark {
+    @include ios-dark;
+  }
 
-    .ios body.dark {
-        @include ios-dark;
-    }
-
-    .md body.dark {
-        @include md-dark;
-    }
+  .md body.dark {
+    @include md-dark;
+  }
 }
 
 .ios body.dark {
-    @include ios-dark;
+  @include ios-dark;
 }
 
 .md body.dark {
-    @include md-dark;
+  @include md-dark;
 }
 
 // // dark end
@@ -126,445 +122,458 @@
 *,
 *:before,
 *:after {
-    outline: 0 none !important;
-    margin: 0;
-    padding: 0;
+  outline: 0 none !important;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('../src/assets/fonts/Segoe UI.eot');
-    src: url('../src/assets/fonts/Segoe UI.eot?#iefix') format('embedded-opentype'),
-         url('../src/assets/fonts/Segoe UI.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Segoe UI";
+  src: url("../src/assets/fonts/Segoe UI.eot");
+  src: url("../src/assets/fonts/Segoe UI.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Segoe UI.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
 .primary-text-color {
-    color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .primary-text-color1 {
-    color: #f8d843 !important;
+  color: #f8d843 !important;
 }
 
 .primary-text-color2 {
-    color: rgba(79, 79, 79) !important;
+  color: rgba(79, 79, 79) !important;
 }
 
 .primary-text-color3 {
-    color: rgba(238, 86, 86) !important;
+  color: rgba(238, 86, 86) !important;
 }
 
 .primary-text-color4 {
-    color: rgba(151, 151, 151) !important;
+  color: rgba(151, 151, 151) !important;
 }
 
 .primary-text-color5 {
-    color: rgba(179, 177, 177) !important;
+  color: rgba(179, 177, 177) !important;
 }
 
 .primary-text-color6 {
-    color: rgba(130, 131, 135) !important;
+  color: rgba(130, 131, 135) !important;
 }
 
 .primary-text-color7 {
-    color: rgba(79, 79, 79) !important;
+  color: rgba(79, 79, 79) !important;
 }
 
 .primary-text-color7 {
-    color: rgba(225, 185, 0) !important;
+  color: rgba(225, 185, 0) !important;
 }
 
 .color-white {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .pos-rel {
-    position: relative;
+  position: relative;
 }
 
 .pos-abs {
-    position: absolute;
+  position: absolute;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .ion-display-block {
-    display: block;
+  display: block;
 }
 
 .ion-display-flex {
-    display: flex;
+  display: flex;
 }
 
 .ion-display-inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .ion-flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .ion-flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .flex-block {
-    flex: 1;
+  flex: 1;
 }
 
 .font-weight-bold {
-    font-weight: bold !important;
+  font-weight: bold !important;
 }
 
 .font-weight-semi {
-    font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
 .font-size-10 {
-    font-size: 10px !important;
+  font-size: 10px !important;
 }
 
 .font-size-11 {
-    font-size: 11px !important;
+  font-size: 11px !important;
 }
 
 .font-size-12 {
-    font-size: 12px !important;
+  font-size: 12px !important;
 }
 
 .font-size-13 {
-    font-size: 13px !important;
+  font-size: 13px !important;
 }
 
 .font-size-14 {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .font-size-15 {
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 
 .font-size-16 {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 .font-size-17 {
-    font-size: 17px !important;
+  font-size: 17px !important;
 }
 
 .font-size-18 {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 .font-size-19 {
-    font-size: 19px !important;
+  font-size: 19px !important;
 }
 
 .font-size-20 {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .font-size-22 {
-    font-size: 22px !important;
+  font-size: 22px !important;
 }
 
 .font-size-24 {
-    font-size: 24px !important;
+  font-size: 24px !important;
 }
 
 .font-size-25 {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
 .font-size-26 {
-    font-size: 26px !important;
+  font-size: 26px !important;
 }
 
 .font-size-30 {
-    font-size: 30px !important;
+  font-size: 30px !important;
 }
 
 .font-size-36 {
-    font-size: 36px !important;
+  font-size: 36px !important;
 }
 
 .font-size-40 {
-    font-size: 40px !important;
+  font-size: 40px !important;
 }
 
 .font-size-42 {
-    font-size: 40px !important;
+  font-size: 40px !important;
 }
 
 .lh-1 {
-    line-height: 1;
+  line-height: 1;
 }
 
 .lineheight-16 {
-    line-height: 16px;
+  line-height: 16px;
 }
 
 .lineheight-18 {
-    line-height: 18px;
+  line-height: 18px;
 }
 
 .lineheight-30 {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .lineheight-24 {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 .text-transform {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .m-0 {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .m-t-5 {
-    margin-top: 5px !important;
+  margin-top: 5px !important;
 }
 
 .m-t-10 {
-    margin-top: 10px !important;
+  margin-top: 10px !important;
 }
 
 .m-t-15 {
-    margin-top: 15px !important;
+  margin-top: 15px !important;
 }
 
 .m-t-20 {
-    margin-top: 20px !important;
+  margin-top: 20px !important;
 }
 
 .m-t-25 {
-    margin-top: 25px !important;
+  margin-top: 25px !important;
 }
 
 .m-t-30 {
-    margin-top: 30px !important;
+  margin-top: 30px !important;
 }
 
 .m-t-35 {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .m-t-50 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .m-t-60 {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .m-t-70 {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .m-t-80 {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .m-b-5 {
-    margin-bottom: 5px !important;
+  margin-bottom: 5px !important;
 }
 
 .m-b-10 {
-    margin-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .m-b-15 {
-    margin-bottom: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 .m-b-20 {
-    margin-bottom: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 .m-b-25 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .m-b-30 {
-    margin-bottom: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 .m-b-50 {
-    margin-bottom: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 .m-l-5 {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .m-l-10 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .m-l-20 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .m-r-5 {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .m-r-10 {
-    margin-right: 10px !important;
+  margin-right: 10px !important;
 }
 
 .m-r-15 {
-    margin-right: 15px !important;
+  margin-right: 15px !important;
 }
 
 .m-r-20 {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .p-0 {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .p-t-10 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .p-b-10 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .p-b-15 {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .py-0 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .my-10 {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .my-15 {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 .my-20 {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
 }
 
 .img-align-middle {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .align-middle {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .border-radius-0 {
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 .border-radius-5 {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .border-radius-10 {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .border-radius-50 {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .common-shadow {
-    box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+  box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
 }
 
 .common-border {
-    border: 1px solid #ebebeb;
+  border: 1px solid #ebebeb;
 }
 
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .common-btn {
-    width: 170px;
-    --border-radius: 30px;
-    font-size: 14px;
-    color: #000000;
-    --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    --background: #f0df20;
-    --background: -moz-linear-gradient(left,  #f0df20 0%, #f8d843 50%, #f8d843 100%);
-    --background: -webkit-linear-gradient(left,  #f0df20 0%,#f8d843 50%,#f8d843 100%);
-    --background: linear-gradient(to right,  #f0df20 0%,#f8d843 50%,#f8d843 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0df20', endColorstr='#f8d843',GradientType=1 );
-
+  width: 170px;
+  --border-radius: 30px;
+  font-size: 14px;
+  color: #000000;
+  --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  --background: #f0df20;
+  --background: -moz-linear-gradient(
+    left,
+    #f0df20 0%,
+    #f8d843 50%,
+    #f8d843 100%
+  );
+  --background: -webkit-linear-gradient(
+    left,
+    #f0df20 0%,
+    #f8d843 50%,
+    #f8d843 100%
+  );
+  --background: linear-gradient(
+    to right,
+    #f0df20 0%,
+    #f8d843 50%,
+    #f8d843 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0df20', endColorstr='#f8d843',GradientType=1 );
 }
 
 ion-item {
-    --padding-start: 0;
-    --padding-end: 0;
-    --inner-padding-start: 0;
-    --inner-padding-end: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
 }
 
-
 ion-select-popover ion-label {
-    margin-left: 10px !important;
+  margin-left: 10px !important;
 }
 
 ion-select-popover ion-item {
-    --inner-padding-end: 10px;
+  --inner-padding-end: 10px;
 }
 
 .text-truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .break-word {
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-word;
-    word-break: break-all;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    hyphens: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  word-break: break-all;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }

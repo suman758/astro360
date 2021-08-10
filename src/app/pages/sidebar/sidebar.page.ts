@@ -58,6 +58,7 @@ export class SidebarPage implements OnInit {
   }
 
   async logout() {
+    alert();
     this.user = null;
     await this.authService.logout();
     this.fireAuth.signOut().then(() => {

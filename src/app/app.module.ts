@@ -13,6 +13,7 @@ import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { FormatTimePipe } from './pipe/format-time.pipe';
 var CREDENTIALS = {
   apiKey: 'AIzaSyB4-GCxJO5Y6wh1x9bDkLv2W7daTXXyy3Q',
   authDomain: 'astro360-app.firebaseapp.com',
@@ -23,7 +24,7 @@ var CREDENTIALS = {
   measurementId: 'G-142BMTG8B7',
 };
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, FormatTimePipe],
   entryComponents: [],
   imports: [
     JoyrideModule.forRoot(),

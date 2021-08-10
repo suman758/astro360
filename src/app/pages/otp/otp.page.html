@@ -51,10 +51,10 @@
           </div>
           <div class="timer-box m-t-20">
             <p class="ion-text-center font-size-14 primary-text-color">Didn't receive the OTP?</p>
-            <h3 class="font-size-20 m-t-10 primary-text-color">02:08</h3>
+            <h3 class="font-size-20 m-t-10 primary-text-color">{{ counter | formatTime }}</h3>
           </div>
           <ion-button class="common-btn m-t-30" type="submit"
-            >Verify</ion-button
+            (click)="verify_otp()">Verify</ion-button
           >
           <!-- <div class="register my-20">
             <p class="font-size-14 m-0">

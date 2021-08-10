@@ -20,7 +20,7 @@ const routes: Routes = [
     path: 'sidebar',
     loadChildren: () =>
       import('./pages/sidebar/sidebar.module').then((m) => m.SidebarPageModule),
-    canLoad: [AuthGuard], // Secure all child pages
+    //canLoad: [AuthGuard], // Secure all child pages
   },
   {
     path: '',
@@ -31,23 +31,33 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomePageModule),
-  },  {
-    path: 'register',
-    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'forgot-password',
-    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+    path: 'register',
+    loadChildren: () =>
+      import('./pages/register/register.module').then(
+        (m) => m.RegisterPageModule
+      ),
+  },
+  {
+    path: 'otp',
+    loadChildren: () =>
+      import('./pages/otp/otp.module').then((m) => m.OtpPageModule),
   },
   {
     path: 'terms-condition',
-    loadChildren: () => import('./pages/terms-condition/terms-condition.module').then( m => m.TermsConditionPageModule)
+    loadChildren: () =>
+      import('./pages/terms-condition/terms-condition.module').then(
+        (m) => m.TermsConditionPageModule
+      ),
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./pages/dashboard/dashboard.module').then( m => m.DashboardPageModule)
+    loadChildren: () =>
+      import('./pages/dashboard/dashboard.module').then(
+        (m) => m.DashboardPageModule
+      ),
   },
-
 ];
 @NgModule({
   imports: [

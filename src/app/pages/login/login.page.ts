@@ -83,6 +83,14 @@ export class LoginPage implements OnInit {
     );
   }
 
+  sendOTPpage() {
+    this.router.navigateByUrl('/otp', { replaceUrl: true });
+  }
+
+  register() {
+    this.router.navigateByUrl('/register', { replaceUrl: true });
+  }
+
   // Easy access for form fields
   get email() {
     return this.credentials.get('email');

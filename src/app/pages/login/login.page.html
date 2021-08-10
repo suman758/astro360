@@ -39,7 +39,7 @@
             </div> -->
           </div>
       
-          <ion-button class="common-btn m-t-20" type="submit" [disabled]="!credentials.valid"
+          <ion-button class="common-btn m-t-20" type="submit" [disabled]="!credentials.valid" (click)="sendOTPpage()"
             >Log in</ion-button
           >
           <!-- <ion-button type="button" expand="block" color="primary" fill="clear"
@@ -76,7 +76,7 @@
         </form>
       </ion-card-content>
     </ion-card>
-    <div class="register my-10">
+    <div class="register my-10" (click)="register()">
       <p class="font-size-14 m-0">Dont have an account? <span class="primary-text-color3">Register Now</span></p>
     </div>
   </div>

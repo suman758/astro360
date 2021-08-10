@@ -21,7 +21,7 @@
       <ion-card-content>
         <h2 class="font-size-24 font-weight-bold primary-text-color">Hello</h2>
         <p class="font-size-16 font-weight-semi primary-text-color">Sign into your account</p>
-        <form class="m-t-25" (ngSubmit)="login()" [formGroup]="credentials">
+        <form class="m-t-15" (ngSubmit)="login()" [formGroup]="credentials">
           <div class="">
             <div class="d-flex align-items-center">
               <ion-item>
@@ -39,13 +39,13 @@
             </div>
           </div>
       
-          <ion-button class="common-btn m-t-70" type="submit" [disabled]="!credentials.valid"
+          <ion-button class="common-btn m-t-20" type="submit" [disabled]="!credentials.valid"
             >Log in</ion-button
           >
           <!-- <ion-button type="button" expand="block" color="primary" fill="clear"
             >Not yet a member? Sign up!
           </ion-button> -->
-          <div class="text-center m-t-30 m-b-30">
+          <div class="ion-text-center m-t-30 m-b-30">
             <p class="m-0 font-size-14 primary-text-color">Or Login using social Media</p>
           </div>
           <!-- <ion-item-divider class="text-center">

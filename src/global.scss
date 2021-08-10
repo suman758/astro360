@@ -127,6 +127,8 @@
 *:before,
 *:after {
     outline: 0 none !important;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -136,7 +138,7 @@
          url('../src/assets/fonts/Segoe UI.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 
 .primary-text-color {
@@ -148,11 +150,11 @@
 }
 
 .primary-text-color2 {
-    color: rgba(0, 0, 0, 0.8) !important;
+    color: rgba(79, 79, 79) !important;
 }
 
 .primary-text-color3 {
-    color: rgba(0, 0, 0, 0.9) !important;
+    color: rgba(238, 86, 86) !important;
 }
 
 .primary-text-color4 {
@@ -453,6 +455,11 @@
     padding-bottom: 0 !important;
 }
 
+.my-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
 .my-15 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
@@ -469,6 +476,14 @@
 
 .align-middle {
     vertical-align: middle;
+}
+
+.border-radius-0 {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
 .border-radius-5 {
@@ -493,9 +508,31 @@
     -o-border-radius: 50%;
 }
 .common-shadow {
-    background-color: #fff;
-    -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
-    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(73, 73, 73, 0.36);
+}
+
+.common-border {
+    border: 1px solid #ebebeb;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.common-btn {
+    width: 170px;
+    --border-radius: 30px;
+    font-size: 14px;
+    color: #000000;
+    --box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    --background: #f0df20;
+    --background: -moz-linear-gradient(left,  #f0df20 0%, #f8d843 50%, #f8d843 100%);
+    --background: -webkit-linear-gradient(left,  #f0df20 0%,#f8d843 50%,#f8d843 100%);
+    --background: linear-gradient(to right,  #f0df20 0%,#f8d843 50%,#f8d843 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0df20', endColorstr='#f8d843',GradientType=1 );
+
 }
 
 ion-item {

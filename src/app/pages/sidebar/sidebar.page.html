@@ -11,13 +11,13 @@
     <ion-content>
       <div class="navbar-header">
         <div class="d-flex align-items-center">
-          <div class="icon-avatar border-radius-50 m-r-10">
+          <div class="icon-avatar bg-white border-radius-50 m-r-10">
             <img src="assets/screens/avatar-icon.png" alt="Astro360" class="img-fluid">
           </div>
           <div class="flex-grow-1">
             <div class="right-content">
-              <h2 class="font-size-16 font-weight-semi">Welcome</h2>
-              <p class="font-size-16">Suman Das</p>
+              <h2 class="font-size-16 font-weight-semi m-0">Welcome</h2>
+              <p class="font-size-16 m-0">Suman Das</p>
             </div>
           </div>
         </div>
@@ -30,9 +30,9 @@
         <img [src]="user.photoURL" />
         {{ user.displayName }}
       </div>
-      <ion-list>
+      <ion-list class="p-0">
         <ion-menu-toggle auto-hide="false" *ngFor="let nav of NAV">
-          <ion-item
+          <!-- <ion-item
             routerDirection="root"
             [routerLink]="nav.link"
             [class.active-menu]="active === nav.link"
@@ -43,15 +43,118 @@
               [ios]="nav.icon + '-outline'"
               [md]="nav.icon + '-sharp'"
             ></ion-icon>
+          </ion-item> -->
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15 m-r-15">
+                  <img src="assets/screens/transaction-history-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Transaction History</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/topup-wallet-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Topup Wallet</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/schedule-calls-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Schedule Calls</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/call-logs-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Call Logs</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/settings-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Settings</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/favourite-astrologer-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Favourite Astrologer</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/my-account-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>My Account</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/kunduli-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Kunduli &amp; match Making</span>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/astrology-blog.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Astrology Blog</span>
+              </div>
+            </div>
           </ion-item>
           <ion-item (click)="logout()">
+            <div class="nav-each-list cursor-pointer">
+              <div class="d-flex align-items-center">
+                <div class="avatar-menu m-r-15">
+                  <img src="assets/screens/logout-icon.png" alt="Astro360" class="img-fluid">
+                </div>
+                <span>Logout</span>
+              </div>
+            </div>
+          </ion-item>
+          <!-- <ion-item (click)="logout()">
             Logout
             <ion-icon
               slot="start"
               [ios]="'log-out'"
               [md]="'log-out'"
             ></ion-icon>
-          </ion-item>
+          </ion-item> -->
+          <div class="nav-item-footer">
+            <span class="font-size-14">Version: 0.0.1</span>
+          </div>
         </ion-menu-toggle>
       </ion-list>
     </ion-content>

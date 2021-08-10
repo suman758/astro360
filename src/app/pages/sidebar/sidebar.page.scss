@@ -1,6 +1,26 @@
 .navbar-header {
+    background-image: url('../../../assets/screens/sidebar-header-bg.jpg');
+    background-repeat: no-repeat;
+    padding: 12px 16px;
+    background-size: cover;
     .icon-avatar {
         width: 50px;
-        height: 50px
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+.nav-each-list {
+    padding: 10px 0 10px 20px;
+}
+
+ion-list {
+    height: 100vh;
+}
+
+.nav-item-footer {
+    padding: 5px 20px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-terms-condition',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./terms-condition.page.scss'],
 })
 export class TermsConditionPage implements OnInit {
+  constructor(public modalController: ModalController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  dismiss() {
+    this.modalController.dismiss({
+      dismissed: true,
+    });
   }
-
 }

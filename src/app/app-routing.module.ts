@@ -47,7 +47,7 @@ const routes: Routes = [
   {
     path: 'terms-condition',
     loadChildren: () =>
-      import('./pages/terms-condition/terms-condition.module').then(
+      import('./modal/terms-condition/terms-condition.module').then(
         (m) => m.TermsConditionPageModule
       ),
   },
